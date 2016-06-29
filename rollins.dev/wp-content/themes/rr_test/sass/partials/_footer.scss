@@ -1,0 +1,7 @@
+//  footer.scss
+.site-footer {
+    height: auto;
+    background-color: $black;
+    @include pad(em(30px) 0);
+    text-align: center;
+}

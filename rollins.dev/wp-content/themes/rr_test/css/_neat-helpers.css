@@ -1,0 +1,70 @@
+/*
+Error: Undefined variable: "$golden".
+        on line 7 of /Users/GraphicDesigner/projects/rollins/mm4-wp-test/rollins.dev/wp-content/themes/rr_test/sass/settings/_grid.scss
+        from line 6 of /Users/GraphicDesigner/projects/rollins/mm4-wp-test/rollins.dev/wp-content/themes/rr_test/sass/_neat-helpers.scss
+
+2: @import "functions/private";
+3: @import "functions/new-breakpoint";
+4: 
+5: // Settings
+6: @import "settings/grid";
+7: @import "settings/visual-grid";
+8: @import "settings/disable-warnings";
+
+Backtrace:
+/Users/GraphicDesigner/projects/rollins/mm4-wp-test/rollins.dev/wp-content/themes/rr_test/sass/settings/_grid.scss:7
+/Users/GraphicDesigner/projects/rollins/mm4-wp-test/rollins.dev/wp-content/themes/rr_test/sass/_neat-helpers.scss:6
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:124:in `each'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:124:in `each'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:124:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/funcall.rb:124:in `_perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:469:in `visit_variable'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `with_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:423:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$golden\".\A         on line 7 of /Users/GraphicDesigner/projects/rollins/mm4-wp-test/rollins.dev/wp-content/themes/rr_test/sass/settings/_grid.scss\A         from line 6 of /Users/GraphicDesigner/projects/rollins/mm4-wp-test/rollins.dev/wp-content/themes/rr_test/sass/_neat-helpers.scss\A \A 2: @import \"functions/private\";\A 3: @import \"functions/new-breakpoint\";\A 4: \A 5: // Settings\A 6: @import \"settings/grid\";\A 7: @import \"settings/visual-grid\";\A 8: @import \"settings/disable-warnings\";"; }

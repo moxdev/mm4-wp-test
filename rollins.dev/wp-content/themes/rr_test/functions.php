@@ -111,6 +111,17 @@ function rr_test_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	if ( is_page_template('front-page.php' ) ) {
+
+		wp_deregister_script( 'jquery' );
+
+		wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+
+		wp_register_script( 'rr_test-flexslider', get_template_directory_uri() . '/js/flexslider.js', array(), NULL, true );
+
+		wp_enqueue_script( 'rr_test-carousel-js', get_template_directory_uri() . '/js/carousel.js', array( 'jquery', 'rr_test-flexslider' ), NULL, true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'rr_test_scripts' );
 
@@ -138,3 +149,35 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load front-page-flexslider file.
+ */
+require get_template_directory() . '/inc/front-page-flexslider.php';
+
+
+function rr_test_front_page_carousel() {
+	$images = get_field('gallery');
+
+	if( $images ): ?>
+	    <div id="slider" class="flexslider">
+	        <ul class="slides">
+	            <?php foreach( $images as $image ): ?>
+	                <li>
+	                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+	                    <p><?php echo $image['caption']; ?></p>
+	                </li>
+	            <?php endforeach; ?>
+	        </ul>
+	    </div>
+	    <div id="carousel" class="flexslider">
+	        <ul class="slides">
+	            <?php foreach( $images as $image ): ?>
+	                <li>
+	                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	                </li>
+	            <?php endforeach; ?>
+	        </ul>
+	    </div>
+	<?php endif;
+}

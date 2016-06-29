@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Layout
     ## Header
     ## Footer
+    ## Content
     ## Home Page
     ## Photo Gallery Page
     ## Amenities Page
@@ -1032,6 +1033,27 @@ object {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
+/* line 2, sass/partials/_footer.scss */
+.site-footer {
+  height: auto;
+  background-color: #000000;
+  padding: 1.875em 0;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+/* line 1, sass/partials/_content.scss */
+#content {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*--------------------------------------------------------------
 ## Home Page
 --------------------------------------------------------------*/
