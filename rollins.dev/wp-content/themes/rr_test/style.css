@@ -40,6 +40,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Layout
+    ## Header
+    ## Footer
+    ## Home Page
+    ## Photo Gallery Page
+    ## Amenities Page
+    ## Contact Page
+
 --------------------------------------------------------------*/
 /* line 4, sass/grid/_box-sizing.scss */
 html {
@@ -51,6 +59,61 @@ html {
   box-sizing: inherit;
 }
 
+/* line 12, sass/grid/_visual-grid.scss */
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+  background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 75em;
+  opacity: 0.2;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 29.9375em) {
+  /* line 12, sass/grid/_visual-grid.scss */
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 47.3684210526%, transparent 47.3684210526%, transparent 52.6315789474%, #d6d6d6 52.6315789474%, #d6d6d6 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 47.3684210526%, transparent 47.3684210526%, transparent 52.6315789474%, #d6d6d6 52.6315789474%, #d6d6d6 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 47.3684210526%, transparent 47.3684210526%, transparent 52.6315789474%, #d6d6d6 52.6315789474%, #d6d6d6 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 48em) {
+  /* line 12, sass/grid/_visual-grid.scss */
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 23.0769230769%, transparent 23.0769230769%, transparent 25.641025641%, #d6d6d6 25.641025641%, #d6d6d6 48.7179487179%, transparent 48.7179487179%, transparent 51.2820512821%, #d6d6d6 51.2820512821%, #d6d6d6 74.358974359%, transparent 74.358974359%, transparent 76.9230769231%, #d6d6d6 76.9230769231%, #d6d6d6 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 23.0769230769%, transparent 23.0769230769%, transparent 25.641025641%, #d6d6d6 25.641025641%, #d6d6d6 48.7179487179%, transparent 48.7179487179%, transparent 51.2820512821%, #d6d6d6 51.2820512821%, #d6d6d6 74.358974359%, transparent 74.358974359%, transparent 76.9230769231%, #d6d6d6 76.9230769231%, #d6d6d6 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 23.0769230769%, transparent 23.0769230769%, transparent 25.641025641%, #d6d6d6 25.641025641%, #d6d6d6 48.7179487179%, transparent 48.7179487179%, transparent 51.2820512821%, #d6d6d6 51.2820512821%, #d6d6d6 74.358974359%, transparent 74.358974359%, transparent 76.9230769231%, #d6d6d6 76.9230769231%, #d6d6d6 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 12, sass/grid/_visual-grid.scss */
+  body:before {
+    background-image: -webkit-linear-gradient(left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+    background-image: linear-gradient(to left, transparent 0, #d6d6d6 0, #d6d6d6 7.5630252101%, transparent 7.5630252101%, transparent 8.4033613445%, #d6d6d6 8.4033613445%, #d6d6d6 15.9663865546%, transparent 15.9663865546%, transparent 16.8067226891%, #d6d6d6 16.8067226891%, #d6d6d6 24.3697478992%, transparent 24.3697478992%, transparent 25.2100840336%, #d6d6d6 25.2100840336%, #d6d6d6 32.7731092437%, transparent 32.7731092437%, transparent 33.6134453782%, #d6d6d6 33.6134453782%, #d6d6d6 41.1764705882%, transparent 41.1764705882%, transparent 42.0168067227%, #d6d6d6 42.0168067227%, #d6d6d6 49.5798319328%, transparent 49.5798319328%, transparent 50.4201680672%, #d6d6d6 50.4201680672%, #d6d6d6 57.9831932773%, transparent 57.9831932773%, transparent 58.8235294118%, #d6d6d6 58.8235294118%, #d6d6d6 66.3865546218%, transparent 66.3865546218%, transparent 67.2268907563%, #d6d6d6 67.2268907563%, #d6d6d6 74.7899159664%, transparent 74.7899159664%, transparent 75.6302521008%, #d6d6d6 75.6302521008%, #d6d6d6 83.1932773109%, transparent 83.1932773109%, transparent 84.0336134454%, #d6d6d6 84.0336134454%, #d6d6d6 91.5966386555%, transparent 91.5966386555%, transparent 92.4369747899%, #d6d6d6 92.4369747899%, #d6d6d6 100%, transparent 100%);
+  }
+}
+
+@font-face {
+  font-family: 'cabin-regular';
+  src: url("fonts/cabin-regular-webfont.woff2") format("woff2"), url("fonts/cabin-regular-webfont") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cabin-bold';
+  src: url("fonts/cabin-bold-webfont.woff2") format("woff2"), url("fonts/cabin-bold-webfont.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -959,5 +1022,27 @@ object {
 .gallery-caption {
   display: block;
 }
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Home Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Photo Gallery Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Amenities Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Contact Page
+--------------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
