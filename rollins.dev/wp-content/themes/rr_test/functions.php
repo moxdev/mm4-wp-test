@@ -157,27 +157,18 @@ require get_template_directory() . '/inc/front-page-flexslider.php';
 
 
 function rr_test_front_page_carousel() {
-	$images = get_field('gallery');
+	$images = get_field('image-gallery');
 
 	if( $images ): ?>
-	    <div id="slider" class="flexslider">
-	        <ul class="slides">
-	            <?php foreach( $images as $image ): ?>
-	                <li>
-	                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                    <p><?php echo $image['caption']; ?></p>
-	                </li>
-	            <?php endforeach; ?>
-	        </ul>
-	    </div>
-	    <div id="carousel" class="flexslider">
-	        <ul class="slides">
-	            <?php foreach( $images as $image ): ?>
-	                <li>
-	                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                </li>
-	            <?php endforeach; ?>
-	        </ul>
-	    </div>
+	    <ul>
+	        <?php foreach( $images as $image ): ?>
+	            <li>
+	                <a href="<?php echo $image['url']; ?>">
+	                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	                </a>
+	                <p><?php echo $image['caption']; ?></p>
+	            </li>
+	        <?php endforeach; ?>
+	    </ul>
 	<?php endif;
 }

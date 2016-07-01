@@ -25,10 +25,20 @@ get_header(); ?>
                 endif;
 
             endwhile; // End of the loop.
-            ?>
 
+         function rr_test_front_page_carousel();  ?>
         </main><!-- #main -->
     </div><!-- #primary -->
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/flexslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.flexslider.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
 
 <?php
 get_footer();
