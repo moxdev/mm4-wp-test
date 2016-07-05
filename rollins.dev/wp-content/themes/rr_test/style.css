@@ -1117,12 +1117,7 @@ object {
 }
 /* line 10, sass/partials/_homepage.scss */
 #slider .flex-control-nav {
-  bottom: -10px;
-  position: absolute;
-  right: 50%;
-  text-align: center;
-  width: auto;
-  z-index: 1000;
+  bottom: 10px;
 }
 
 /*--------------------------------------------------------------
