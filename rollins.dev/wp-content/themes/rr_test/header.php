@@ -39,4 +39,8 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
+	<?php if( function_exists( rr_test_front_page_carousel() ) ) {
+ 		rr_test_front_page_carousel();
+ 	} ?>
+
 	<div id="content" class="site-content">

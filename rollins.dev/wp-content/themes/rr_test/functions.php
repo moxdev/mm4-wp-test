@@ -104,23 +104,24 @@ add_action( 'widgets_init', 'rr_test_widgets_init' );
 function rr_test_scripts() {
 	wp_enqueue_style( 'rr_test-style', get_stylesheet_uri() );
 
+	if ( is_page_template( 'front-page.php' ) ) {
+		wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/sass/vendor-css/flexslider.css','rr_test-style','1.1','all');
+
+		wp_deregister_script( 'jquery' );
+
+		wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+
+		wp_register_script( 'rr_test-flexslider', get_template_directory_uri() . '/js/vendor-js/jquery.flexslider-min.js', array(), NULL, true );
+
+		wp_enqueue_script( 'rr_test-front-page-image-carousel', get_template_directory_uri() . '/js/front-page-image-carousel.js', array( 'jquery', 'rr_test-flexslider' ), NULL, true );
+	}
+
 	wp_enqueue_script( 'rr_test-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'rr_test-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
-	}
-
-	if ( is_page_template('front-page.php' ) ) {
-
-		wp_deregister_script( 'jquery' );
-
-		wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
-
-		wp_register_script( 'rr_test-flexslider', get_template_directory_uri() . '/js/flexslider.js', array(), NULL, true );
-
-		wp_enqueue_script( 'rr_test-carousel-js', get_template_directory_uri() . '/js/carousel.js', array( 'jquery', 'rr_test-flexslider' ), NULL, true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'rr_test_scripts' );
@@ -151,24 +152,6 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Load front-page-flexslider file.
+ * Load image carousel on home page.
  */
 require get_template_directory() . '/inc/front-page-flexslider.php';
-
-
-function rr_test_front_page_carousel() {
-	$images = get_field('image-gallery');
-
-	if( $images ): ?>
-	    <ul>
-	        <?php foreach( $images as $image ): ?>
-	            <li>
-	                <a href="<?php echo $image['url']; ?>">
-	                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                </a>
-	                <p><?php echo $image['caption']; ?></p>
-	            </li>
-	        <?php endforeach; ?>
-	    </ul>
-	<?php endif;
-}
