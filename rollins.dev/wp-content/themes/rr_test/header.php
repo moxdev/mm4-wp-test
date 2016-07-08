@@ -29,7 +29,7 @@
 			<div class="wrapper">
 
 				<a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg" alt="Rollins Ridge Apartments logo"></a>
-
+				<!-- <p class="logo-title">Apartments</p> -->
 			</div><!-- .wrapper -->
 		</div><!-- .site-branding -->
 

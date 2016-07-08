@@ -115,13 +115,6 @@ body:before {
   font-weight: bold;
   font-style: normal;
 }
-@font-face {
-  font-family: 'flexslider-icon';
-  src: url("/../fonts/flexslider/flexslider-icon.eot");
-  src: url("/../fonts/flexslider/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("/../fonts/flexslider/flexslider-icon.woff") format("woff"), url("/../fonts/flexslider/flexslider-icon.ttf") format("truetype"), url("/../fonts/flexslider/flexslider-icon.svg#flexslider-icon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -137,7 +130,7 @@ body {
   margin: 0;
 }
 
-/* line 11, sass/_normalize.scss */
+/* line 12, sass/_normalize.scss */
 article,
 aside,
 details,
@@ -153,7 +146,7 @@ summary {
   display: block;
 }
 
-/* line 26, sass/_normalize.scss */
+/* line 27, sass/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -162,63 +155,63 @@ video {
   vertical-align: baseline;
 }
 
-/* line 34, sass/_normalize.scss */
+/* line 35, sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 39, sass/_normalize.scss */
+/* line 40, sass/_normalize.scss */
 [hidden],
 template {
   display: none;
 }
 
-/* line 44, sass/_normalize.scss */
+/* line 45, sass/_normalize.scss */
 a {
   background-color: transparent;
 }
 
-/* line 48, sass/_normalize.scss */
+/* line 49, sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 53, sass/_normalize.scss */
+/* line 54, sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 57, sass/_normalize.scss */
+/* line 58, sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 62, sass/_normalize.scss */
+/* line 63, sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 66, sass/_normalize.scss */
+/* line 67, sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 71, sass/_normalize.scss */
+/* line 72, sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 76, sass/_normalize.scss */
+/* line 77, sass/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 80, sass/_normalize.scss */
+/* line 81, sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -227,43 +220,43 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 88, sass/_normalize.scss */
+/* line 89, sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 92, sass/_normalize.scss */
+/* line 93, sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 96, sass/_normalize.scss */
+/* line 97, sass/_normalize.scss */
 img {
   border: 0;
 }
 
-/* line 100, sass/_normalize.scss */
+/* line 101, sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 104, sass/_normalize.scss */
+/* line 105, sass/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
 
-/* line 108, sass/_normalize.scss */
+/* line 109, sass/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 113, sass/_normalize.scss */
+/* line 114, sass/_normalize.scss */
 pre {
   overflow: auto;
 }
 
-/* line 117, sass/_normalize.scss */
+/* line 118, sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -272,7 +265,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 125, sass/_normalize.scss */
+/* line 126, sass/_normalize.scss */
 button,
 input,
 optgroup,
@@ -283,18 +276,18 @@ textarea {
   margin: 0;
 }
 
-/* line 135, sass/_normalize.scss */
+/* line 136, sass/_normalize.scss */
 button {
   overflow: visible;
 }
 
-/* line 139, sass/_normalize.scss */
+/* line 140, sass/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 144, sass/_normalize.scss */
+/* line 145, sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -303,73 +296,73 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 152, sass/_normalize.scss */
+/* line 153, sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 157, sass/_normalize.scss */
+/* line 158, sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 163, sass/_normalize.scss */
+/* line 164, sass/_normalize.scss */
 input {
   line-height: normal;
 }
 
-/* line 167, sass/_normalize.scss */
+/* line 168, sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 173, sass/_normalize.scss */
+/* line 174, sass/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 178, sass/_normalize.scss */
+/* line 179, sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 183, sass/_normalize.scss */
+/* line 184, sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 189, sass/_normalize.scss */
+/* line 190, sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 194, sass/_normalize.scss */
+/* line 195, sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 198, sass/_normalize.scss */
+/* line 199, sass/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 202, sass/_normalize.scss */
+/* line 203, sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 207, sass/_normalize.scss */
+/* line 208, sass/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -1037,7 +1030,7 @@ object {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-/* line 1, sass/partials/_header.scss */
+/* line 1, sass/page-templates/_header.scss */
 #masthead {
   width: 100%;
   height: 150px;
@@ -1045,34 +1038,34 @@ object {
   background-color: #ffffff;
   border-bottom: 2px solid #8F221D;
 }
-/* line 7, sass/partials/_header.scss */
+/* line 7, sass/page-templates/_header.scss */
 #masthead .site-branding {
   float: left;
   width: 30%;
 }
-/* line 10, sass/partials/_header.scss */
+/* line 10, sass/page-templates/_header.scss */
 #masthead .site-branding #logo img {
   width: 150px;
   height: auto;
   margin: 20px;
 }
-/* line 16, sass/partials/_header.scss */
+/* line 16, sass/page-templates/_header.scss */
 #masthead #site-navigation {
   width: 70%;
   clear: right;
   margin-top: 45px;
 }
-/* line 20, sass/partials/_header.scss */
+/* line 20, sass/page-templates/_header.scss */
 #masthead #site-navigation .menu-primary-container {
   float: right;
 }
-/* line 23, sass/partials/_header.scss */
+/* line 23, sass/page-templates/_header.scss */
 #masthead #site-navigation ul li a {
   font-size: 1.3em;
   padding: 10px;
   color: #7f7f7f;
 }
-/* line 28, sass/partials/_header.scss */
+/* line 28, sass/page-templates/_header.scss */
 #masthead #site-navigation ul li.current_page_item a {
   color: #8F221D;
 }
@@ -1080,7 +1073,7 @@ object {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
-/* line 2, sass/partials/_footer.scss */
+/* line 2, sass/page-templates/_footer.scss */
 .site-footer {
   height: auto;
   background-color: #8F221D;
@@ -1092,7 +1085,7 @@ object {
 /*--------------------------------------------------------------
 ## Content
 --------------------------------------------------------------*/
-/* line 1, sass/partials/_content.scss */
+/* line 2, sass/page-templates/_content.scss */
 #content {
   content: "";
   display: table;
@@ -1105,19 +1098,52 @@ object {
 /*--------------------------------------------------------------
 ## Home Page
 --------------------------------------------------------------*/
-/* line 1, sass/partials/_homepage.scss */
-#slider {
+/* line 3, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider {
   border: none;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
-/* line 6, sass/partials/_homepage.scss */
-#slider .flex-direction-nav a::before {
+/* line 9, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider .flex-direction-nav a::before {
   font-size: 30px;
 }
-/* line 10, sass/partials/_homepage.scss */
-#slider .flex-control-nav {
+/* line 13, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider .flex-control-nav {
   bottom: 10px;
+}
+/* line 17, sass/page-templates/_homepage.scss */
+.page-template-front-page .entry-title {
+  display: none;
+}
+/* line 20, sass/page-templates/_homepage.scss */
+.page-template-front-page .entry-content {
+  text-align: center;
+}
+/* line 22, sass/page-templates/_homepage.scss */
+.page-template-front-page .entry-content h1 {
+  font: "cabin-bold", sans-serif;
+  color: #8F221D;
+}
+/* line 26, sass/page-templates/_homepage.scss */
+.page-template-front-page .entry-content p {
+  font: "cabin-regular", sans-serif;
+}
+/* line 31, sass/page-templates/_homepage.scss */
+.page-template-front-page .box {
+  float: left;
+  display: block;
+  margin-right: 0.8403361345%;
+  width: 32.7731092437%;
+}
+/* line 89, sass/grid/_span-columns.scss */
+.page-template-front-page .box:last-child {
+  margin-right: 0;
+}
+/* line 78, sass/grid/_omega.scss */
+.page-template-front-page .box:nth-child(3) {
+  margin-right: 0;
 }
 
 /*--------------------------------------------------------------

@@ -11,9 +11,7 @@ if ( ! function_exists( 'rr_test_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
+ * Note that this function is hooked into the after_setup_theme hook, which runs before the init hook. The init hook is too late for some features, such as indicating support for post thumbnails.
  */
 function rr_test_setup() {
 	/*
@@ -41,10 +39,28 @@ function rr_test_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size('blog-feature', 200, 200, true);
+	add_image_size('front-page-slide-1', 1400, 535, true);
+	add_image_size('front-page-slide-2', 1400, 800, true);
+	add_image_size('gallery-main', 1400, 950, true);
+	add_image_size('gallery-thumb', 300, 200, true);
+
+	/*
+	 * Enable support for Post Formats.
+	 * See https://developer.wordpress.org/themes/functionality/post-formats/
+	 */
+	add_theme_support( 'post-formats', array(
+		'aside',
+		'image',
+		'video',
+		'quote',
+		'link',
+	) );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'rr_test' ),
+		'footer' => esc_html__( 'Footer', 'rr_test' )
 	) );
 
 	/*
@@ -155,3 +171,9 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load image carousel on home page.
  */
 require get_template_directory() . '/inc/front-page-flexslider.php';
+
+/**
+ * Load image carousel on home page.
+ */
+require get_template_directory() . '/inc/front-page-boxes.php';
+

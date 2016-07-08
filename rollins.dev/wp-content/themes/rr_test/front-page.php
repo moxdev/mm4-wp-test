@@ -24,6 +24,8 @@ get_header(); ?>
                     comments_template();
                 endif;
 
+                rr_test_front_page_boxes();
+
             endwhile; // End of the loop ?>
         </main><!-- #main -->
     </div><!-- #primary -->

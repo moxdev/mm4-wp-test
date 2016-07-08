@@ -170,6 +170,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Rollins-Ridge-logo-edit.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41788,
+		"inputAbbreviatedPath": "\/images\/Rollins-Ridge-logo-edit.png",
+		"outputAbbreviatedPath": "\/images\/Rollins-Ridge-logo-edit.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/inc\/custom-header.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -193,6 +204,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/inc\/extras.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/inc\/front-page-boxes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/front-page-boxes.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2552,14 +2572,14 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/sass\/partials\/_amenities-page.scss": {
+	"\/sass\/page-templates\/_amenities-page.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/partials\/_amenities-page.scss",
+		"inputAbbreviatedPath": "\/sass\/page-templates\/_amenities-page.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_amenities-page.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2568,14 +2588,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/partials\/_contact-page.scss": {
+	"\/sass\/page-templates\/_contact-page.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/partials\/_contact-page.scss",
+		"inputAbbreviatedPath": "\/sass\/page-templates\/_contact-page.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_contact-page.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2584,14 +2604,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/partials\/_content.scss": {
+	"\/sass\/page-templates\/_content.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/partials\/_content.scss",
+		"inputAbbreviatedPath": "\/sass\/page-templates\/_content.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_content.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2600,14 +2620,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/partials\/_footer.scss": {
+	"\/sass\/page-templates\/_footer.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/partials\/_footer.scss",
+		"inputAbbreviatedPath": "\/sass\/page-templates\/_footer.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2616,14 +2636,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/partials\/_header.scss": {
+	"\/sass\/page-templates\/_header.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/partials\/_header.scss",
+		"inputAbbreviatedPath": "\/sass\/page-templates\/_header.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2632,14 +2652,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/partials\/_homepage.scss": {
+	"\/sass\/page-templates\/_homepage.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/partials\/_homepage.scss",
+		"inputAbbreviatedPath": "\/sass\/page-templates\/_homepage.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_homepage.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2648,15 +2668,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/partials\/_partials.scss": {
+	"\/sass\/page-templates\/_page-templates.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/partials\/_partials.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_partials.css",
+		"inputAbbreviatedPath": "\/sass\/page-templates\/_page-templates.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_page-templates.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2664,14 +2684,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/partials\/_photo-gallery.scss": {
+	"\/sass\/page-templates\/_photo-gallery.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/partials\/_photo-gallery.scss",
+		"inputAbbreviatedPath": "\/sass\/page-templates\/_photo-gallery.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_photo-gallery.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
