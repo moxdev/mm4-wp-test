@@ -14,11 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rr_test' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'rr_test' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'rr_test' ), 'rr_test', '<a href="http://www.mm4solutions.com/" rel="designer">Millennium Marketing Solutions</a>' ); ?>
-		</div><!-- .site-info -->
+        <?php if(function_exists( 'rr_test_footer_colophon' ) ) {
+            rr_test_footer_colophon();
+        } ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

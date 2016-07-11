@@ -5,4 +5,14 @@
     color: $white;
     @include pad(em(30px) 0);
     text-align: center;
+
+    .footer-address-section {
+        width: 40%;
+
+        .footer-address {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
 }

@@ -177,3 +177,8 @@ require get_template_directory() . '/inc/front-page-flexslider.php';
  */
 require get_template_directory() . '/inc/front-page-boxes.php';
 
+/**
+ * Custom footer for entrie site.
+ */
+require get_template_directory() . '/inc/footer-colophon.php';
+

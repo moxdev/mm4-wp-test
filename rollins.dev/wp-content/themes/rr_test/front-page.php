@@ -24,7 +24,9 @@ get_header(); ?>
                     comments_template();
                 endif;
 
-                rr_test_front_page_boxes();
+                if(function_exists( 'rr_test_front_page_boxes' ) ) {
+                    rr_test_front_page_boxes();
+                }
 
             endwhile; // End of the loop ?>
         </main><!-- #main -->

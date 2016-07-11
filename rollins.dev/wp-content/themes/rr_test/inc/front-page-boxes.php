@@ -10,12 +10,17 @@
  *
  */
 
-function rr_test_front_page_boxes() { ?>
-    <section class="box-wrapper">
-        <div class="box box-1"><img src="http://placehold.it/400x350/8F221D/ffffff?text=WORD+UP+SON+WE+SOME+BOXES!"></div>
-        <div class="box box-2"><img src="http://placehold.it/400x350/8F221D/ffffff?text=WORD+UP+SON+WE+SOME+BOXES!"></div>
-        <div class="box box-3"><img src="http://placehold.it/400x350/8F221D/ffffff?text=WORD+UP+SON+WE+SOME+BOXES!"></div>
-    </section>
+function rr_test_front_page_boxes() {
+    if( have_rows( 'highlight_boxes' ) ): ?>
+        <div class="highlight-boxes-wrapper">
+            <?php while( have_rows ( 'highlight_boxes' ) ): the_row();
+                $image = get_sub_field( 'highlight_image' ); ?>
 
-    <?php
+                    <div class="highlight-box">
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    </div>
+            <?php endwhile; ?>
+
+        </div><!-- highlight-boxes-wrapper -->
+    <?php endif;
 }

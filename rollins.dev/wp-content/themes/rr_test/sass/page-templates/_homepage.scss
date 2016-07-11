@@ -20,16 +20,22 @@
     .entry-content {
         text-align: center;
         h1 {
-            font: $font-cabin-bold;
+            font-family: $font-times-regular;
             color: $red;
         }
         p {
-            font: $font-cabin-regular;
+            font-family: $font-cabin-regular;
         }
     }
 
-    .box {
+    .highlight-box {
         @include span-columns(4);
         @include omega(3);
+        margin-bottom: 50px;
+
+        img {
+            // width: 400px;
+            // height: 300px;
+        }
     }
  }
