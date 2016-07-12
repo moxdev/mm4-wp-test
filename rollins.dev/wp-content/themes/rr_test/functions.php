@@ -132,6 +132,18 @@ function rr_test_scripts() {
 		wp_enqueue_script( 'rr_test-front-page-image-carousel', get_template_directory_uri() . '/js/front-page-image-carousel.js', array( 'jquery', 'rr_test-flexslider' ), NULL, true );
 	}
 
+	if ( is_page_template( 'page-photo-gallery-page.php' ) ) {
+		wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/sass/vendor-css/flexslider.css','rr_test-style','1.1','all');
+
+		wp_deregister_script( 'jquery' );
+
+		wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+
+		wp_register_script( 'rr_test-flexslider', get_template_directory_uri() . '/js/vendor-js/jquery.flexslider-min.js', array(), NULL, true );
+
+		wp_enqueue_script( 'rr_test-page-gallery', get_template_directory_uri() . '/js/photo-gallery.js', array( 'jquery', 'rr_test-flexslider' ), NULL, true );
+	}
+
 	wp_enqueue_script( 'rr_test-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'rr_test-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -141,6 +153,17 @@ function rr_test_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'rr_test_scripts' );
+
+/*
+* Implement Custom Flexslider in header.php
+ */
+function rr_test_load_flexslider() {
+	if ( is_page_template( 'front-page.php' ) && function_exists( rr_test_front_page_carousel() ) ) {
+ 		rr_test_front_page_carousel();
+ 	}elseif ( is_page_template( 'page-photo-gallery-page.php' ) && function_exists( rr_test_photo_gallery() ) ) {
+ 		rr_test_photo_gallery();
+ 	}
+}
 
 /**
  * Implement the Custom Header feature.
@@ -181,4 +204,9 @@ require get_template_directory() . '/inc/front-page-boxes.php';
  * Custom footer for entrie site.
  */
 require get_template_directory() . '/inc/footer-colophon.php';
+
+/**
+ * Custom photo gallery.
+ */
+require get_template_directory() . '/inc/photo-gallery-flexslider.php';
 

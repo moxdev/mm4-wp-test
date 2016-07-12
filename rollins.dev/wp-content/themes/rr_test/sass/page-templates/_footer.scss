@@ -3,16 +3,20 @@
     height: auto;
     background-color: $red;
     color: $white;
-    @include pad(em(30px) 0);
-    text-align: center;
-
+    @include pad(em(20px) em(30px) em(50px) em(30px));
+    font-size: .7em;
+    display: block;
     .footer-address-section {
         width: 40%;
-
-        .footer-address {
-            display: flex;
-            justify-content: flex-start;
+        text-align: left;
+        float: left;
+        .footer-phone {
+            font-size: 1.5em;
         }
     }
-
+    .footer-equal-housing {
+        width: 55%;
+        text-align: right;
+        float: right;
+    }
 }

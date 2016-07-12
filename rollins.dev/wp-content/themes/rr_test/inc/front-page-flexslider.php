@@ -13,8 +13,8 @@
 function rr_test_front_page_carousel() {
     if( is_page_template( 'front-page.php' ) ) {
         if( function_exists( 'get_field') ) {
-            $images = get_field('images');
-            if( $images ): ?>
+            $images = get_field( 'images' );
+                if( $images ): ?>
                 <div id="slider" class="flexslider">
                     <ul class="slides">
                         <?php foreach( $images as $image ): ?>

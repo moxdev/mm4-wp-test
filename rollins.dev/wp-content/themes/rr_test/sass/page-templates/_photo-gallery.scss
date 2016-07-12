@@ -1,0 +1,16 @@
+// photo-gallery.scss
+
+.page-template-page-photo-gallery-page {
+    .site-main {
+        text-align: center;
+
+        .entry-title {
+            font-family: $font-times-regular;
+            color: $red;
+        }
+        .entry-content {
+            font-family: $font-cabin-regular;
+        }
+    }
+}
+

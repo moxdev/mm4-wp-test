@@ -1084,23 +1084,25 @@ object {
   height: auto;
   background-color: #8F221D;
   color: #ffffff;
-  padding: 1.875em 0;
-  text-align: center;
+  padding: 1.25em 1.875em 3.125em 1.875em;
+  font-size: .7em;
+  display: block;
 }
 /* line 9, sass/page-templates/_footer.scss */
 .site-footer .footer-address-section {
   width: 40%;
+  text-align: left;
+  float: left;
 }
-/* line 12, sass/page-templates/_footer.scss */
-.site-footer .footer-address-section .footer-address {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+/* line 13, sass/page-templates/_footer.scss */
+.site-footer .footer-address-section .footer-phone {
+  font-size: 1.5em;
+}
+/* line 17, sass/page-templates/_footer.scss */
+.site-footer .footer-equal-housing {
+  width: 55%;
+  text-align: right;
+  float: right;
 }
 
 /*--------------------------------------------------------------
@@ -1171,6 +1173,20 @@ object {
 /*--------------------------------------------------------------
 ## Photo Gallery Page
 --------------------------------------------------------------*/
+/* line 4, sass/page-templates/_photo-gallery.scss */
+.page-template-page-photo-gallery-page .site-main {
+  text-align: center;
+}
+/* line 7, sass/page-templates/_photo-gallery.scss */
+.page-template-page-photo-gallery-page .site-main .entry-title {
+  font-family: "timesregular", sans-serif;
+  color: #8F221D;
+}
+/* line 11, sass/page-templates/_photo-gallery.scss */
+.page-template-page-photo-gallery-page .site-main .entry-content {
+  font-family: "cabin-regular", sans-serif;
+}
+
 /*--------------------------------------------------------------
 ## Amenities Page
 --------------------------------------------------------------*/
