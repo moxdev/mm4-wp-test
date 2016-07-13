@@ -1147,13 +1147,15 @@ object {
 /* line 22, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content h1 {
   font-family: "timesregular", sans-serif;
+  font-weight: 400;
   color: #8F221D;
 }
-/* line 26, sass/page-templates/_homepage.scss */
+/* line 27, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content p {
   font-family: "cabin-regular", sans-serif;
+  font-weight: 400;
 }
-/* line 31, sass/page-templates/_homepage.scss */
+/* line 33, sass/page-templates/_homepage.scss */
 .page-template-front-page .highlight-box {
   float: left;
   display: block;
@@ -1180,11 +1182,13 @@ object {
 /* line 7, sass/page-templates/_photo-gallery.scss */
 .page-template-page-photo-gallery-page .site-main .entry-title {
   font-family: "timesregular", sans-serif;
+  font-weight: 400;
   color: #8F221D;
 }
-/* line 11, sass/page-templates/_photo-gallery.scss */
+/* line 12, sass/page-templates/_photo-gallery.scss */
 .page-template-page-photo-gallery-page .site-main .entry-content {
   font-family: "cabin-regular", sans-serif;
+  font-weight: 400;
 }
 
 /*--------------------------------------------------------------

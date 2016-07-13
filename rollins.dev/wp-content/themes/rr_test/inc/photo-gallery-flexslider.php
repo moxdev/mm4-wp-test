@@ -17,12 +17,12 @@ function rr_test_photo_gallery() {
                 if( $images ): ?>
                 <div id="slider" class="flexslider">
                     <ul class="slides">
-                        <?php foreach( $images as $image ): ?>
+
                         <li data-thumb="<?php echo $image['url']; ?>">
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                             <p><?php echo $image['caption']; ?></p>
                         </li>
-                        <?php endforeach; ?>
+
                     </ul>
                 </div>
                 <?php endif;
