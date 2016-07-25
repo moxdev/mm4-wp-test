@@ -1039,7 +1039,7 @@ object {
 /* line 1, sass/page-templates/_header.scss */
 #masthead {
   width: 100%;
-  height: 150px;
+  height: auto;
   color: #8F221D;
   background-color: #ffffff;
   border-bottom: 2px solid #8F221D;
@@ -1049,29 +1049,27 @@ object {
   float: left;
   width: 30%;
 }
-/* line 10, sass/page-templates/_header.scss */
+/* line 11, sass/page-templates/_header.scss */
 #masthead .site-branding #logo img {
-  width: 150px;
   height: auto;
-  margin: 20px;
 }
-/* line 16, sass/page-templates/_header.scss */
+/* line 17, sass/page-templates/_header.scss */
 #masthead #site-navigation {
   width: 70%;
   clear: right;
   margin-top: 45px;
 }
-/* line 20, sass/page-templates/_header.scss */
+/* line 21, sass/page-templates/_header.scss */
 #masthead #site-navigation .menu-primary-container {
   float: right;
 }
-/* line 23, sass/page-templates/_header.scss */
+/* line 24, sass/page-templates/_header.scss */
 #masthead #site-navigation ul li a {
   font-size: 1.3em;
   padding: 10px;
   color: #7f7f7f;
 }
-/* line 28, sass/page-templates/_header.scss */
+/* line 29, sass/page-templates/_header.scss */
 #masthead #site-navigation ul li.current_page_item a {
   color: #8F221D;
 }
@@ -1126,50 +1124,45 @@ object {
   border: none;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
-/* line 9, sass/page-templates/_homepage.scss */
-.page-template-front-page #slider .flex-direction-nav a::before {
-  font-size: 30px;
-}
-/* line 13, sass/page-templates/_homepage.scss */
+/* line 10, sass/page-templates/_homepage.scss */
 .page-template-front-page #slider .flex-control-nav {
-  bottom: 10px;
+  bottom: 10%;
+  z-index: 999;
 }
-/* line 17, sass/page-templates/_homepage.scss */
+/* line 14, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider .flex-control-nav li a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  border: 2px solid #ffffff;
+  background: #8F221D;
+  cursor: pointer;
+  text-indent: -9999px;
+  border-radius: 0;
+}
+/* line 26, sass/page-templates/_homepage.scss */
+.page-template-front-page #slider .flex-control-nav .flex-active {
+  background: #daba75;
+}
+/* line 33, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-title {
   display: none;
 }
-/* line 20, sass/page-templates/_homepage.scss */
+/* line 36, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content {
   text-align: center;
 }
-/* line 22, sass/page-templates/_homepage.scss */
+/* line 38, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content h1 {
   font-family: "timesregular", sans-serif;
   font-weight: 400;
   color: #8F221D;
 }
-/* line 27, sass/page-templates/_homepage.scss */
+/* line 43, sass/page-templates/_homepage.scss */
 .page-template-front-page .entry-content p {
   font-family: "cabin-regular", sans-serif;
   font-weight: 400;
-}
-/* line 33, sass/page-templates/_homepage.scss */
-.page-template-front-page .highlight-box {
-  float: left;
-  display: block;
-  margin-right: 0.8403361345%;
-  width: 32.7731092437%;
-  margin-bottom: 50px;
-}
-/* line 89, sass/grid/_span-columns.scss */
-.page-template-front-page .highlight-box:last-child {
-  margin-right: 0;
-}
-/* line 78, sass/grid/_omega.scss */
-.page-template-front-page .highlight-box:nth-child(3) {
-  margin-right: 0;
 }
 
 /*--------------------------------------------------------------

@@ -14,10 +14,12 @@ function rr_test_front_page_boxes() {
     if( have_rows( 'highlight_boxes' ) ): ?>
         <div class="highlight-boxes-wrapper">
             <?php while( have_rows ( 'highlight_boxes' ) ): the_row();
-                $image = get_sub_field( 'highlight_image' ); ?>
+                $image = get_sub_field( 'highlight_image' );
+                $url = get_sub_field( 'highlight_url' );
+                $text = get_sub_field( 'highlight_text' ); ?>
 
                     <div class="highlight-box">
-                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <a href="<?php echo $url; ?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><span><?php echo $text; ?></span></a>
                     </div>
             <?php endwhile; ?>
 

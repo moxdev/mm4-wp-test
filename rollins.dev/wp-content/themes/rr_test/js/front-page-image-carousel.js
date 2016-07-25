@@ -4,6 +4,10 @@
 (function($) {
   $(window).load(function() {
     // front-page slider
-    $('.flexslider').flexslider();
+    $('.flexslider').flexslider({
+        animation: 'fade',
+        directionNav: false,
+        animationLoop: true
+    });
   });
 })(jQuery);
