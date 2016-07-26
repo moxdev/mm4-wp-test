@@ -1164,6 +1164,13 @@ object {
   font-family: "cabin-regular", sans-serif;
   font-weight: 400;
 }
+/* line 49, sass/page-templates/_homepage.scss */
+.page-template-front-page .highlight-box {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  margin: 0 auto;
+}
 
 /*--------------------------------------------------------------
 ## Photo Gallery Page

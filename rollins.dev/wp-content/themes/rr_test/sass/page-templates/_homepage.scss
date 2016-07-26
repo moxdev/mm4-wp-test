@@ -46,14 +46,21 @@
         }
     }
 
-    // .highlight-box {
-    //     @include span-columns(4);
-    //     @include omega(3);
-    //     margin-bottom: 50px;
-
-    //     img {
-    //         // width: 400px;
-    //         // height: 300px;
-    //     }
-    // }
+    .highlight-box {
+        float: left;
+        width: 31%;
+        padding: 10px;
+        margin: 0 auto;
+    }
 }
+
+// .highlight-box {
+//         @include span-columns(4);
+//         @include omega(3);
+//         margin-bottom: 50px;
+
+//         img {
+//             // width: 400px;
+//             // height: 300px;
+//         }
+//     }
